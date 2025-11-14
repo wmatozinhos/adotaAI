@@ -86,4 +86,3 @@ Para usar em localhost:
 copyright (c) 2023, Adotaai. All rights reserved.
 ## Licença
 Este projeto foi desenvolvido por **Wellington Matozinhos** e está disponível ao uso geral
-

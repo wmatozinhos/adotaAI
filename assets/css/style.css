@@ -1,0 +1,211 @@
+/* Estilos Gerais */
+:root {
+  --primary-color: #f8690a; /* Laranja exato como na imagem */
+  --secondary-color: #315f85; /* Cor azul escuro do footer */
+  --background-color: #f9f4eb; /* Ajustado para ser mais próximo da imagem */
+  --text-color: #333333;
+  --light-color: #ffffff;
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Ajustes no Header */
+header {
+  background-color: var(--light-color);
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 28px; /* Ajustado para o tamanho da pata na logo */
+  margin-right: 5px;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--text-color); /* Alterado para preto como na imagem */
+}
+
+/* Ajustes no menu de navegação */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Espaçamento reduzido entre itens do menu */
+}
+
+.nav-menu li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem; /* Tamanho reduzido para melhor correspondência */
+  transition: var(--transition);
+}
+
+/* Ajustes nos botões de autenticação */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.9rem; /* Texto menor nos botões */
+  padding: 0.5rem 1.2rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: none; /* Remove a borda */
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--background-color);
+  padding: 2rem 0 4rem; /* Aumentado o padding inferior */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+/* Ajustes na caixa de pesquisa */
+.search-box {
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.search-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.65rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* Ajustes nos cards de categoria de pets */
+.pet-categories {
+  display: flex;
+  gap: 15px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  justify-content: flex-start; /* Alinhados à esquerda como na imagem */
+  padding-left: 1rem;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 10px; /* Um pouco menos arredondado */
+  overflow: hidden;
+  width: 100px; /* Um pouco menor */
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.category-img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+
+/* Ajustes nos indicadores de paginação */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 1.5rem auto;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: var(--primary-color);
+  width: 20px;
+  border-radius: 10px;
+}
+
+/* Pequenos pontos decorativos como na imagem */
+.bg-dots {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-image: radial-gradient(var(--primary-color) 2px, transparent 2px);
+  background-size: 12px 12px;
+  opacity: 0.2; /* Mais sutil */
+  z-index: -1;
+}
+
+.bg-dots.top-right {
+  top: 5%;
+  right: 10%;
+}
+
+/* Adicionando os botões de registro/adoção como na imagem */
+.action-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.option-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.option-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.option-btn.inactive {
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
