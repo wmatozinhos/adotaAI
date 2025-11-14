@@ -83,6 +83,6 @@ Para usar em localhost:
 - Altere o host do arquivo includes/config.php para 'localhost'.
 - Certifique-se de que o arquivo database_setup.sql esteja no mesmo diretório que o arquivo includes/config.php.
 
-copyright (c) 2023, Adotaai. All rights reserved.
+copyright (c) 2025, Adotaai. All rights reserved.
 ## Licença
 Este projeto foi desenvolvido por **Wellington Matozinhos** e está disponível ao uso geral
